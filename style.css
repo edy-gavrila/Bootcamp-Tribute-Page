@@ -10,6 +10,11 @@ body {
   font-family: Poppins, sans-serif;
 }
 
+h1,
+h2 {
+  font-weight: 400;
+}
+
 .container {
   width: 100%;
   margin: 0 auto;
@@ -42,7 +47,6 @@ body {
 
 .hero-title {
   font-size: 1.8rem;
-  font-weight: 400;
   line-height: 2rem;
 }
 
@@ -66,13 +70,92 @@ body {
   padding: 0.75rem 1rem;
 }
 
-.nav-item{
-    padding: 0.2rem 0;
+.nav-item {
+  padding: 0.2rem 0;
 }
 
 .nav-item a {
   text-decoration: none;
+  font-size: 0.9rem;
   color: #505050;
+}
+
+.section {
+  padding: 1rem 0;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #000;
+}
+
+.section-content-container {
+  margin-bottom: 1rem;
+  color: #505050;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.para-container {
+  padding: 0 1rem;
+}
+
+.text-para {
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+
+.text-para::first-letter {
+  font-size: 1.3rem;
+}
+
+.img-div {
+  width: 100%;
+  margin-top: 0.7rem;
+  background-color: #e1e1e1;
+}
+
+.section-image {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.fig-caption {
+  font-style: italic;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.text-full {
+  padding: 0 1rem;
+}
+
+.fact-file-section {
+  background-color: #c4c4c4;
+  color: #505050;
+  padding: 1rem;
+}
+
+.fact-file-list {
+  margin-left: 3rem;
+  margin-bottom: 1rem;
+}
+
+.footer {
+  padding: 0.5rem 1rem;
+  background-color: #e1e1e1;
+  color: #505050;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: #000;
 }
 
 @media (min-width: 640px) {
@@ -80,16 +163,29 @@ body {
     max-width: 640px;
   }
 
-  .nav-item-list{
-      flex-direction: row;
-      padding-left: 3rem;
+  .nav-item-list {
+    padding-left: 3rem;
+    flex-direction: row;
   }
 
-  .nav-item{
-      padding: 0;
-      margin-right: 1.2rem;
+  .nav-item {
+    padding: 0;
+    margin-right: 1.2rem;
+  }
+
+  .section-content-container {
+    flex-direction: row;
+  }
+
+  .para-container {
+    width: 70%;
+  }
+
+  .img-div {
+    width: 30%;
   }
 }
+
 @media (min-width: 768px) {
   .container {
     max-width: 768px;
